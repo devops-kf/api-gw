@@ -1,0 +1,9 @@
+_format_version: "2.1"
+
+services:
+  - name: user-service
+    url: http://user-service:5000/
+    routes:
+      - name: user-service
+        paths:
+          - /user-service/
