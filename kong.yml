@@ -2,8 +2,14 @@ _format_version: "2.1"
 
 services:
   - name: user-service
-    url: http://user-service:5000/
+    url: http://user-service
     routes:
       - name: user-service
         paths:
           - /user-service/
+  - name: identity-service
+    url: http://identity-service
+    routes:
+      - name: identity-service
+        paths:
+          - /identity-service/
